@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Javsascript Task App</title>
+    <!-- BOOTSTRAP 4 BOOTSWATCH LUX THEME -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- favicon -->
+    <link rel="icon" href="favicon-16x16.png">
+  </head>
+  <body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="#">BoFo Task App</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-md-4">
+
+          <div class="card">
+            <div class="card-body">
+              <!-- FORM TO ADD TASKS -->
+              <form id="formTask">
+                <div class="form-group">
+                  <input type="text" id="title" placeholder="Add A Todo" class="form-control mb-3">
+                </div>
+                <div class="form-group">
+                  <textarea type= "text" id="description" placeholder="Add A description" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+                <div class="d-grid gap-2">
+                  <button type="submit" class="btn btn-primary btn-block btn-lg mt-3">Save</button>
+                </div>
+                
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <div id="tasks"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
